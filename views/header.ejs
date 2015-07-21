@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
     <head>
-	<title><%= title %> - Microblog</title>
+	<title><%= title %> - Group Decision Matrix</title>
 	
 	<style type="text/css">
 	    /*body{
@@ -24,34 +24,17 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Microblog</a>
+      <a class="navbar-brand" href="#">GDMat</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/">首页</a></li>
-        <% if(!user) {%>
-        <li><a href="/login">登入</a></li>
-	      <li><a href="/reg">注册</a></li>
-        <% } else {%>
-        <li><a href="/logout">登出</a></li>
-        <% } %>
+        <li class="active"><a href="/">Home</a></li>
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
   </nav>
 
   <div id="container" class="container">
-    <% if (success) { %>
-    <div class="alert alert-success">
-      <%= success %>
-    </div>
-    <% } %>
-    <% if (error) { %>
-    <div class="alert alert-danger">
-      <%= error %>
-    </div>
-    <% } %>
-  
-  
